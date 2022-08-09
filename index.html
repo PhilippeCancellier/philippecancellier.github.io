@@ -27,53 +27,55 @@
       <v-app>
         <v-main>
           <v-container>
-            <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="200">
+            <v-parallax class="elevation-3 rounded" src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="200">
               <v-row align="center" justify="center">
                 <v-col class="text-center" cols="12">
-                  <h1 class="text-h4 font-weight-thin">Philippe CANCELLIER</h1>
+                  <h1 class="text-h5 font-weight-thin">Philippe CANCELLIER</h1>
                   <h4 class="subheading mt-3">Développeur d'idées numériques</h4>
+                  <v-avatar small style="position: absolute; right: 0.5rem; bottom: 0.5rem">
+                    <v-img
+                      src="https://media-exp1.licdn.com/dms/image/C4E03AQGCVszXia2f0A/profile-displayphoto-shrink_400_400/0/1646690648524?e=1665619200&v=beta&t=ZCSGqzuxyCICgZq4WvrIc4zr5IQ87LvBNDjYaGjVTCQ"
+                      alt="Philippe CANCELLIER"
+                      class="grey darken-4"
+                    ></v-img>
+                  </v-avatar>
                 </v-col>
               </v-row>
             </v-parallax>
 
-            <v-row justify="space-around">
-              <v-col md="5">
-                <v-card class="ma-5 pa-2" height="200">
+            <v-row class="mt-1">
+              <v-col cols="12" md="6">
+                <v-card class="pa-1" class="elevation-3 rounded" height="200">
                   <v-card-title>Contact<v-spacer></v-spacer><span class="mdi mdi-account"></span></v-card-title>
                   <v-card-text>
-                    <v-icon class="mr-2" small color="grey darken-2">mdi-mail</v-icon
-                    ><a href="mailto:philippe.cancellier@pm.me">philippe.cancellier@pm.me</a><br />
+                    <v-icon class="mr-2" small color="grey darken-2">mdi-mail</v-icon>
+                    <a href="mailto:philippe.cancellier@pm.me">philippe.cancellier@pm.me</a>
+                    <br />
                     <v-divider class="my-2"></v-divider>
-                    <v-icon class="mr-2" small color="blue darken-2">mdi-linkedin</v-icon
-                    ><a href="https://www.linkedin.com/in/philippecancellier">https://www.linkedin.com/in/philippecancellier</a><br />
-                    <v-icon class="mr-2" small color="black">mdi-github</v-icon
-                    ><a href="https://github.com/PhilippeCancellier">https://github.com/PhilippeCancellier</a><br />
+                    <v-icon class="mr-2" small color="blue darken-2">mdi-linkedin</v-icon>
+                    <a href="https://www.linkedin.com/in/philippecancellier">linkedin.com/in/philippecancellier</a>
+                    <br />
+                    <v-icon class="mr-2" small color="black">mdi-github</v-icon>
+                    <a href="https://github.com/PhilippeCancellier">github.com/PhilippeCancellier</a>
+                    <br />
                   </v-card-text>
                 </v-card>
               </v-col>
-              <v-col md="2" class="text-center">
-                <v-card class="ma-5 pa-2 align-center rounded-xl" flat tile height="200">
-                  <v-img
-                    src="https://media-exp1.licdn.com/dms/image/C4E03AQGCVszXia2f0A/profile-displayphoto-shrink_400_400/0/1646690648524?e=1665619200&v=beta&t=ZCSGqzuxyCICgZq4WvrIc4zr5IQ87LvBNDjYaGjVTCQ"
-                    alt="Philippe CANCELLIER"
-                    class="grey darken-4"
-                  ></v-img>
-                </v-card>
-              </v-col>
-              <v-col md="5">
-                <v-card class="ma-5 pa-2" height="200">
+
+              <v-col cols="12" md="6">
+                <v-card class="pa-1" class="elevation-3 rounded" height="200">
                   <v-card-title>Coordonnées<v-spacer></v-spacer><span class="mdi mdi-home"></span></v-card-title>
                   <v-card-text>
                     <v-icon class="mr-3" small>mdi-phone</v-icon> +33 6 45 48 72 64 <br />
                     <v-divider class="my-2"></v-divider>
                     <v-icon class="mr-3" small>mdi-mail</v-icon>550, chemin de Font-Côtes<br />
-                    <v-icon class="mr-3" small> mdi-blank</v-icon>26600 Chanos-Curson<br />
+                    <v-icon class="mr-3" small> mdi-blank</v-icon>26600 Chanos-Curson
                   </v-card-text>
                 </v-card>
               </v-col>
             </v-row>
-            <v-row justify="space-around">
-              <v-col md="10">
+            <v-row>
+              <v-col md="12">
                 <v-card class="pa-2">
                   <v-card-title>Ressources<v-spacer></v-spacer><v-icon>mdi-file</v-icon></v-card-title>
                   <v-card-text>

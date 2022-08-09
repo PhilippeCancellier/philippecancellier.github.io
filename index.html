@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
     <title>Philippe CANCELLIER</title>
     <meta property="og:title" content="philippecancellier.github.io" />
     <meta property="og:locale" content="fr_FR" />
@@ -13,65 +14,109 @@
     <meta property="og:site_name" content="philippecancellier.github.io" />
     <script type="application/ld+json">
       {
-        "name":"philippecancellier.github.io",
-        "@type":"WebSite",
-        "url":"https://philippecancellier.github.io/",
-        "headline":"philippecancellier.github.io",
-        "@context":"http://schema.org"
+        "name": "philippecancellier.github.io",
+        "@type": "WebSite",
+        "url": "https://philippecancellier.github.io/",
+        "headline": "philippecancellier.github.io",
+        "@context": "http://schema.org"
       }
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/css/uikit.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit-icons.min.js"></script>  </head>
+  </head>
   <body>
-    <h1>Philippe CANCELLIER</h1>
-      
-    <h2>Contact</h2>
-    <address>
-      <i class="fas fa-stroopwafel"></i><a href="mailto:philippe.cancellier@pm.me">philippe.cancellier@pm.me</a><br>
-      <i class="fas fa-stroopwafel"></i><a href="https://github.com/PhilippeCancellier">GitHub</a><br>
-      <i class="fas fa-stroopwafel"></i><a href="https://www.linkedin.com/in/philippecancellier">LinkedIn</a>
-    </address>
+    <div id="app" style="display: none">
+      <v-app>
+        <v-main>
+          <v-container>
+            <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="200">
+              <v-row align="center" justify="center">
+                <v-col class="text-center" cols="12">
+                  <h1 class="text-h4 font-weight-thin">Philippe CANCELLIER</h1>
+                  <h4 class="subheading mt-3">Développeur d'idées numériques</h4>
+                </v-col>
+              </v-row>
+            </v-parallax>
 
-
-    <h2 class="uk-heading-line"><span>Évènements</span></h2>
-    <h3>Bienvenue !</h3>
-    <div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2020-06-02T07:00+01:00">
-      <div>
-        <div class="uk-countdown-number uk-countdown-days"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
-      </div>
-      <div class="uk-countdown-separator"><a href="" uk-icon="heart"></a></div>
-      <div>
-        <div class="uk-countdown-number uk-countdown-hours"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
-      </div>
-      <div class="uk-countdown-separator">:</div>
-      <div>
-        <div class="uk-countdown-number uk-countdown-minutes"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
-      </div>
-      <div class="uk-countdown-separator">:</div>
-      <div>
-        <div class="uk-countdown-number uk-countdown-seconds"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
-      </div>
+            <v-row justify="space-around">
+              <v-col md="5">
+                <v-card class="ma-5 pa-2" height="200">
+                  <v-card-title>Contact<v-spacer></v-spacer><span class="mdi mdi-account"></span></v-card-title>
+                  <v-card-text>
+                    <v-icon class="mr-2" small color="grey darken-2">mdi-mail</v-icon
+                    ><a href="mailto:philippe.cancellier@pm.me">philippe.cancellier@pm.me</a><br />
+                    <v-divider class="my-2"></v-divider>
+                    <v-icon class="mr-2" small color="blue darken-2">mdi-linkedin</v-icon
+                    ><a href="https://www.linkedin.com/in/philippecancellier">https://www.linkedin.com/in/philippecancellier</a><br />
+                    <v-icon class="mr-2" small color="black">mdi-github</v-icon
+                    ><a href="https://github.com/PhilippeCancellier">https://github.com/PhilippeCancellier</a><br />
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-col md="2" class="text-center">
+                <v-card class="ma-5 pa-2 align-center rounded-xl" flat tile height="200">
+                  <v-img
+                    src="https://media-exp1.licdn.com/dms/image/C4E03AQGCVszXia2f0A/profile-displayphoto-shrink_400_400/0/1646690648524?e=1665619200&v=beta&t=ZCSGqzuxyCICgZq4WvrIc4zr5IQ87LvBNDjYaGjVTCQ"
+                    alt="Philippe CANCELLIER"
+                    class="grey darken-4"
+                  ></v-img>
+                </v-card>
+              </v-col>
+              <v-col md="5">
+                <v-card class="ma-5 pa-2" height="200">
+                  <v-card-title>Coordonnées<v-spacer></v-spacer><span class="mdi mdi-home"></span></v-card-title>
+                  <v-card-text>
+                    <v-icon class="mr-3" small>mdi-phone</v-icon> +33 6 45 48 72 64 <br />
+                    <v-divider class="my-2"></v-divider>
+                    <v-icon class="mr-3" small>mdi-mail</v-icon>550, chemin de Font-Côtes<br />
+                    <v-icon class="mr-3" small> mdi-blank</v-icon>26600 Chanos-Curson<br />
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+            <v-row justify="space-around">
+              <v-col md="10">
+                <v-card class="pa-2">
+                  <v-card-title>Ressources<v-spacer></v-spacer><v-icon>mdi-file</v-icon></v-card-title>
+                  <v-card-text>
+                    <ul>
+                      <li>
+                        <a target="_blank" href="https://github.com/axios/axios#installing">https://github.com/axios/axios#installing</a>
+                      </li>
+                      <li><a target="_blank" href="https://quilljs.com">https://quilljs.com</a></li>
+                      <li>
+                        <a target="_blank" href="https://mermaid-js.github.io/mermaid/#/usage?id=api-usage"
+                          >https://mermaid-js.github.io/mermaid/#/usage?id=api-usage</a
+                        >
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://vuejs.org/v2/guide/installation.html#CDN"
+                          >https://vuejs.org/v2/guide/installation.html#CDN</a
+                        >
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://vuetifyjs.com/en/getting-started/quick-start/#cdn-usage"
+                          >https://vuetifyjs.com/en/getting-started/quick-start/#cdn-usage</a
+                        >
+                      </li>
+                    </ul>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-main>
+      </v-app>
     </div>
-    <h2>Autres</h2>
-    <address>
-      21, avenue Albert 1er de Belgique<br>
-      38100 Grenoble<br>
-      <i class="fas fa-stroopwafel"></i> +33 6 45 48 72 64
-    </address>
-    
-    <h2>Ressources</h2>
-    <ul>
-      <li><a target="_blank" href="https://github.com/axios/axios#installing">https://github.com/axios/axios#installing</a></li>
-      <li><a target="_blank" href="https://quilljs.com">https://quilljs.com</a></li>
-      <li><a target="_blank" href="https://mermaid-js.github.io/mermaid/#/usage?id=api-usage">https://mermaid-js.github.io/mermaid/#/usage?id=api-usage</a></li>
-      <li><a target="_blank" href="https://vuejs.org/v2/guide/installation.html#CDN">https://vuejs.org/v2/guide/installation.html#CDN</a></li>
-      <li><a target="_blank" href="https://vuetifyjs.com/en/getting-started/quick-start/#cdn-usage">https://vuetifyjs.com/en/getting-started/quick-start/#cdn-usage</a></li>
-    </ul>
-      
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        vuetify: new Vuetify(),
+        created() {
+          document.getElementById("app").style.display = "block";
+        },
+      });
+    </script>
   </body>
 </html>
